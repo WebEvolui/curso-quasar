@@ -94,8 +94,8 @@ export default {
 
       api
         .post("/login", {
-          login: state.login,
-          senha: state.senha,
+          email: state.login,
+          password: state.senha,
           device_name: "web_admin",
         })
         .then((response) => {

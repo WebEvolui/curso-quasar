@@ -137,7 +137,7 @@ function toggleLeftDrawer() {
 function logout() {
   $q.loading.show();
   api
-    .post("/lougout")
+    .post("/logout")
     .then(function () {
       document.cookie = "token_adm_minierp=; expires=Thu, 01 Jan 1970;";
       router.push({ path: "/login" });
