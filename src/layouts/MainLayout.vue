@@ -115,6 +115,7 @@ import { ref, onMounted } from "vue";
 import { useQuasar } from "quasar";
 import { useRouter } from "vue-router";
 import { api } from "boot/axios";
+import { defineComponent } from "vue";
 
 defineComponent({
   name: "MainLayout",
