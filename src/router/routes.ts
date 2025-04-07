@@ -38,6 +38,18 @@ const routes: RouteRecordRaw[] = [
         path: "fornecedor/editar/:id",
         component: () => import("pages/fornecedores/EditFornecedor.vue"),
       },
+      {
+        path: "/produtos",
+        component: () => import("pages/produtos/Produtos.vue"),
+      },
+      {
+        path: "/produto/novo",
+        component: () => import("pages/produtos/NewProduto.vue"),
+      },
+      {
+        path: "produto/editar/:id",
+        component: () => import("pages/produtos/EditProduto.vue"),
+      }
     ],
     meta: {
       requiresAuth: true,
