@@ -21,6 +21,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: "/cliente/novo",
         component: () => import("pages/clientes/NewCliente.vue"),
+      },
+      {
+        path: "cliente/editar/:id",
+        component: () => import("pages/clientes/EditCliente.vue"),
       }
     ],
     meta: {

@@ -47,6 +47,7 @@
 import { onMounted, ref } from "vue";
 import { api } from "boot/axios";
 import { useRouter } from "vue-router";
+import { useQuasar } from "quasar";
 import { formatCNPJ, formatCPF, formatPhone } from "src/helpers/formats.js";
 
 defineOptions({
@@ -105,6 +106,7 @@ const columns: any = [
 ];
 
 const router = useRouter();
+const $q = useQuasar();
 
 const rows = ref([]);
 const loading = ref(false);
@@ -116,6 +118,8 @@ const pagination = ref({
 });
 
 onMounted(() => {
+  $q.loading.hide();
+
   onRequest({
     pagination: pagination.value,
   });
