@@ -10,6 +10,10 @@ const routes: RouteRecordRaw[] = [
         name: "painel",
         component: () => import("pages/IndexPage.vue"),
       },
+      {
+        path: "/categorias",
+        component: () => import("pages/categorias/Categorias.vue"),
+      }
     ],
     meta: {
       requiresAuth: true,
