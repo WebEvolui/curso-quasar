@@ -44,8 +44,8 @@
   import { onMounted, ref } from "vue";
   import { useQuasar } from "quasar";
   import { api } from "src/boot/axios";
-//   import modalNewCategoria from "src/pages/categorias/NewCategoria.vue";
-//   import modalEditCategoria from "src/pages/categorias/EditCategoria.vue";
+  import modalNewCategoria from "src/pages/categorias/NewCategoria.vue";
+  import modalEditCategoria from "src/pages/categorias/EditCategoria.vue";
   
   defineOptions({
     name: "CategoriasPage",
