@@ -49,6 +49,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: "produto/editar/:id",
         component: () => import("pages/produtos/EditProduto.vue"),
+      },
+      {
+        path: "/notas_saida",
+        component: () => import("pages/notas_saida/NotasSaida.vue"),
       }
     ],
     meta: {
