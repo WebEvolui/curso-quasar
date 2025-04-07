@@ -53,7 +53,15 @@ const routes: RouteRecordRaw[] = [
       {
         path: "/notas_saida",
         component: () => import("pages/notas_saida/NotasSaida.vue"),
-      }
+      },
+      {
+        path: "/nota_saida/nova",
+        component: () => import("pages/notas_saida/NewNotaSaida.vue"),
+      },
+      {
+        path: "/nota_saida/editar/:id",
+        component: () => import("pages/notas_saida/EditNotaSaida.vue"),
+      },
     ],
     meta: {
       requiresAuth: true,
